@@ -6,8 +6,8 @@ group "org.ggt.kafka.config.provider"
 version "0.0.1"
 
 compileJava {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 repositories {
@@ -15,8 +15,8 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
-    compileOnly group: 'org.apache.kafka', name: 'kafka_2.12', version: '2.0.0'
-    testCompile group: 'junit', name: 'junit', version: '4.+'
-    testCompile group: 'org.hamcrest', name: 'hamcrest', version: '2.1'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    implementation group: 'org.apache.kafka', name: 'kafka_2.12', version: '2.0.0'
+    testImplementation group: 'junit', name: 'junit', version: '4.+'
+    testImplementation group: 'org.hamcrest', name: 'hamcrest', version: '2.1'
 }
